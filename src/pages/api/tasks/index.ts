@@ -9,7 +9,7 @@ export default async function handler(
     case "GET":
       try {
         const result = await getTasks();
-        return res.status(201).json(result);
+        return res.status(200).json(result);
       } catch (e: any) {
         console.log(e);
         return res.status(500).json({
@@ -20,7 +20,7 @@ export default async function handler(
     case "POST":
       try {
         const result = await createTask(req.body);
-        return res.status(200).json(result);
+        return res.status(201).json(result);
       } catch (e: any) {
         console.log(e);
         return res.status(500).json({

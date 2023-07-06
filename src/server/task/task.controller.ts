@@ -1,4 +1,5 @@
 import clientPromise from "@/lib/mongoose";
+
 import TaskModel, { ITask } from "./task.model";
 
 export async function getTask(id: string): Promise<{ data: ITask } | null> {

@@ -1,5 +1,4 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import { getTasks, createTask } from "@/server/task/task.controller";
 
 export default async function handler(
   req: NextApiRequest,

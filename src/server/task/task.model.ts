@@ -1,9 +1,9 @@
 import mongoose, { Types, Model, Schema } from "mongoose";
 
 export interface ITask {
-  _id?: Types.ObjectId;
+  _id?: Types.ObjectId | string;
   name: string;
-  done?: boolean;
+  isDone: boolean;
 }
 
 const taskSchema = new Schema<ITask, Model<ITask>>({
@@ -11,7 +11,7 @@ const taskSchema = new Schema<ITask, Model<ITask>>({
     type: String,
     required: true,
   },
-  done: {
+  isDone: {
     type: Boolean,
     required: false,
     default: false,

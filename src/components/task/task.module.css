@@ -1,0 +1,11 @@
+.container {
+  margin: 4px;
+}
+
+.container input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.doneStyled {
+  text-decoration: line-through;
+}

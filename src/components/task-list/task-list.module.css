@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container input[type="submit"] {
+  align-self: flex-end;
+  padding: 4px;
+  margin-top: 4px;
+}
